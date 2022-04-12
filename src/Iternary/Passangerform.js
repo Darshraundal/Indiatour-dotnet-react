@@ -30,7 +30,7 @@ function Passangerform() {
             event.preventDefault();
             let demo = JSON.stringify(Passanger);
             console.log(JSON.parse(demo));
-            fetch(`${URL_STRING}/passangers`, {
+            fetch(`${URL_STRING}/passanger/postpassanger`, {
                 method: 'POST',
                 headers: { 'Content-type': 'application/json' },
                 body: demo
